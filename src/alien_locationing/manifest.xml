@@ -1,0 +1,14 @@
+<package>
+  <description brief="alien_locationing">
+
+     alien_locationing
+
+  </description>
+  <author>unitree</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/alien_locationing</url>
+
+</package>
+
+

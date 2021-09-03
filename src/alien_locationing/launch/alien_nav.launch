@@ -1,0 +1,14 @@
+<launch>
+    <arg name="mapfile" default="/home/unitree/map.yaml"/>
+
+    <!-- map server -->
+    <node pkg="map_server" name="map_server" type="map_server" args="$(arg mapfile)"/>
+	
+    <!-- amcl -->
+    <include file="$(find turtlebot3_navigation)/launch/amcl.launch"/>
+
+    <!-- move base -->
+    <node pkg="move_base" type="move_base" name="move_base" output="screen" respawn="false"/>
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find alien_locationing)/alien_nav.rviz"/>
+</launch>
