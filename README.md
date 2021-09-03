@@ -10,7 +10,7 @@ ssh unitreeTwo  #pw: 123
 slam_lidar      
 ```
 
-2. 
+2. start amcl rviz and move_base node
 ```terminal
 roslaunch alien_locationing alien_nav.launch
 ```
