@@ -1,19 +1,15 @@
 # Aliengo catkin workspace
 
-## Brief
-Get the position target from the slave and control aliengo legs correspondingly
+This workspace contains launch files on the master machine side. There is also a multi-machine communication package(aliengo-master-catkin-ws/src/multi_machine) that can receive customized messages from the slave.
 
-## Step
+## Start SLAM
 1. launch slamware lidar
-```terminal
-ssh unitreeTwo  #pw: 123
-slam_lidar      
-```
+    ```sh
+    ssh unitreeTwo  #pw: 123
+    slam_lidar      
+    ```
 
 2. start amcl rviz and move_base node
-```terminal
-roslaunch alien_locationing alien_nav.launch
-```
-
-## TODO
-tf between laser and map?
+    ```sh
+    roslaunch alien_locationing alien_nav.launch
+    ```
